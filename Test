@@ -1,1 +1,9 @@
-вфывывфвы
+# Import load_workbook module from openpyxl
+from openpyxl import load_workbook
+
+# Load in the workbook
+wb = load_workbook('\\Users\\buggy\\Documents\\123.xlsx')
+
+for row in ws.iter_rows(max_col=12, values_only=True):
+
+        print(row)
